@@ -1,6 +1,6 @@
 # diskWake
 
-# example diskwake script:
+# Example diskwake script:
 
 #!/bin/bash
 
@@ -13,4 +13,4 @@ If your script fails to run diskWake "~/bin/" may not be in your $PATHS bash var
 
 https://www.howtogeek.com/658904/how-to-add-a-directory-to-your-path-in-linux/
 
-There is no error handeling yet. might ad in the future.
+There is no error handeling yet. I might add that in the future.
