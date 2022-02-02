@@ -4,4 +4,4 @@
 
 #!/bin/bash
 
-diskWake /mnt/Seagate/disk.wake /mnt/Toshiba/disk.wake /mnt/Extreme500/disk.wake
+diskWake /mnt/Drive1/disk.wake /mnt/Drive2/disk.wake /mnt/Drive3/disk.wake
