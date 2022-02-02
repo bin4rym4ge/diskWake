@@ -13,6 +13,6 @@ If your script fails to run diskWake "~/bin/" may not be in your $PATHS bash var
 
 https://www.howtogeek.com/658904/how-to-add-a-directory-to-your-path-in-linux/
 
-If there is anoyher problem the file system diskWake is writing 
+If there is anoyher problem the file system diskWake is writing to may be root or readonly.
 
 There is no error handeling yet. I might add that in the future.
