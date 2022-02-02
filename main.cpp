@@ -3,32 +3,30 @@
 #include <unistd.h>
 using namespace std;
 
-string path[] = {"/mnt/Seagate/disk.wake", "/mnt/Toshiba/disk.wake", "/mnt/Extreme500/disk.wake"};
-const int paths = sizeof(path)/sizeof(path[0]);
 
-ofstream file0;
-ofstream file1;
-ofstream file2;
 
 int main(int argc, char* argv[]) {
+    ofstream wakeFiles[argc];
 
     cout << "wake on...\n";
 
     usleep(5000000);
 
     while(true){
+        for (int i = 0; i < argc; i++)
+        {
+            wakeFiles[i].open(argv[i]);
+        }
         
-        file0.open(path[0]);
-        file1.open(path[1]);
-        file2.open(path[2]);
+        for (int i = 0; i < argc; i++)
+        {
+            wakeFiles[i] << "wake";
+        }
 
-        file0 << "wake";
-        file1 << "wake";
-        file2 << "wake";
-
-        file0.close();
-        file1.close();
-        file2.close();
+        for (int i = 0; i < argc; i++)
+        {
+            wakeFiles[i].close();
+        }
 
         usleep(5000000);
     }
