@@ -11,17 +11,17 @@ int main(int argc, char* argv[]) {
     usleep(5000000);
 
     while(true){
-        for (int i = 0; i < argc; i++)
+        for (int i = 1; i < argc; i++)
         {
             wakeFiles[i].open(argv[i]);
         }
         
-        for (int i = 0; i < argc; i++)
+        for (int i = 1; i < argc; i++)
         {
             wakeFiles[i] << "wake";
         }
 
-        for (int i = 0; i < argc; i++)
+        for (int i = 1; i < argc; i++)
         {
             wakeFiles[i].close();
         }
