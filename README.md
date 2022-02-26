@@ -1,6 +1,6 @@
 # diskWake
 
-# Example diskwake script:
+# Example diskWake script:
 
 #!/bin/bash
 
