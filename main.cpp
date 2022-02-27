@@ -1,13 +1,13 @@
 #include <iostream>
-#include <fstream>					// ofstream
-#include <unistd.h>					// usleep
+#include <fstream>								// ofstream
+#include <unistd.h>								// usleep
 using namespace std;
 
-#define USEC 1000000				// micro second to second multiplier
-#define WAKEOUT "wake"				// default wake output; will be changeable in the future
+#define USEC 1000000							// micro second to second multiplier
+#define WAKEOUT "wake"							// default wake output; will be changeable in the future
 
 int main(int argc, char* argv[]) {
-	int stimer = 5*USEC;
+	int stimer = 5*USEC;						// set default timer to 5 seconds
     ofstream wakeFiles[argc];
 
     cout << "wake on...\n";
