@@ -4,11 +4,10 @@
 using namespace std;
 
 int main(int argc, char* argv[]) {
+	int stimer = 5000000;
     ofstream wakeFiles[argc];
 
     cout << "wake on...\n";
-
-    usleep(5000000);
 
     while(true){
         for (int i = 1; i < argc; i++)
@@ -26,6 +25,6 @@ int main(int argc, char* argv[]) {
             wakeFiles[i].close();
         }
 
-        usleep(5000000);
+        usleep(stimer);
     }
 }
