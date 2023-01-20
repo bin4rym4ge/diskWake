@@ -4,4 +4,4 @@ default:
 
 install:
 	cp ./bin/diskWake /usr/bin/
-	chmod +x /user/bin/diskWake
+	chmod +x /usr/bin/diskWake
