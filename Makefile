@@ -3,5 +3,5 @@ default:
 	g++ -o ./bin/diskWake ./bin/main.o
 
 install:
-	cp ./bin/diskWake ~/bin/
-	chmod +x ~/bin/wakeAll
+	cp ./bin/diskWake /usr/bin/
+	chmod +x /user/bin/diskWake
